@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Infrastructure as code.md",
+            "file": "SageMaker.md",
             "mode": "source"
           }
         }
@@ -21,6 +21,23 @@
     "id": "30191e4721081eae",
     "type": "split",
     "children": [
+      {
+        "id": "72ce19a54f23134e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dad08363ce3abd68",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ]
+      },
       {
         "id": "c58acff7329c1e4e",
         "type": "tabs",
@@ -39,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#build",
+                "query": "tag:#Jupyter/notebook",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,30 +86,18 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Infrastructure as code.md",
+                "file": "SageMaker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "dad08363ce3abd68",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
+                "unlinkedCollapsed": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -101,8 +106,8 @@
   },
   "active": "b136c632f339e7de",
   "lastOpenFiles": [
+    "SageMaker.md",
     "Infrastructure as code.md",
-    "Untitled.md",
-    "SageMaker.md"
+    "Untitled.md"
   ]
 }

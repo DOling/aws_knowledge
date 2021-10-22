@@ -22,7 +22,7 @@
 
 #### Application settings
 ##### Environment variables
-You can pass a bunch of environment variables to #LocalStack to configure it. The most important ones are listed below. [Here](https://github.com/localstack/localstack#configuration) you will find a list of core configurations.
+You can pass a bunch of environment variables to #tools/LocalStack to configure it. The most important ones are listed below. [Here](https://github.com/localstack/localstack#configuration) you will find a list of core configurations.
 * **EDGE_PORT**
 	* LocalStack port that listens for AWS API requests
 	* default: **4566**

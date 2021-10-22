@@ -15,7 +15,7 @@
 # SageMaker Studio Notebooks
 ## Overview
 * AWS SM Studio is an IDE living in the cloud
-* Studio notebooks is a combination of instances & #SageMaker images:
+* Studio notebooks is a combination of instances & #AWS/SageMaker images:
 	* Instance type: hardware configuration the notebooks run on
 		* Amount of memory
 		* Determine pricing & costing
@@ -27,29 +27,29 @@
 		* Kernel
 			* Conda environment
 ## Capabilities
-* Experience the same features of a Jupyter #notebook and a Jupyter Lab
+* Experience the same features of a #Jupyter/notebook and a Jupyter Lab
 * viewing the notebooks --> **no cost** (Status: #InService)
-* starting the kernel produces cost --> execution of a #Jupyter notebook
+* starting the kernel produces cost --> execution of a #Jupyter/notebook
 * 1-to-1 maping between user and instances
 	* collaborate with colleagues using snapshots
 		* share a read-only copy of your notebook using a #hyperlink
 		* editable by creating a copy
 * provide persistent custom development environments
 	* #build custom #container with approved base images
-	* push to docker registry/ AWS #ECR
+	* push to docker registry/ #AWS/ECR
 	* attach kernel to Studio domain
 	* select kernel to run notebook
-* attach an EBS volume to the SageMaker Notebook Instance
+* attach an #AWS/EBS volume to the SageMaker Notebook Instance
 	* choose any size between 5 GB and 16384 GB, in 1 GB increments; 5 GB is the default value
 	* volume size can be increased by updating the notebook Instance
-	* **only files and data saved within the ```/home/ec2-user/SageMaker``` directory #persist between notebook instance sessions**
+	* **only files and data saved within the ```/home/ec2-user/SageMaker``` directory persist between notebook instance sessions**
 	* each notebook instance's ```/tmp``` directory provides a minimum of 10 GB of storage in an instance store; **instance store is temporary, block-level storage that isn't persistent; SageMaker deletes the directory's contents when the instance is stopped or restarted**
 
 # SageMaker notebook instances
-*  SageMaker notebook instance & SageMaker Studio are interfaces to AWS SageMaker service
-	*  creating a SM notebook instance builds an Amazon Elastic Inference connected to an AWS #EC2 instance with access to an AWS #EBS (Amazon Elastic Block Storage)
+*  #AWS/SageMaker/notebook instance & SageMaker Studio are interfaces to AWS SageMaker service
+	*  creating a SM notebook instance builds an Amazon Elastic Inference connected to an #AWS/EC2 instance with access to an #AWS/EBS (Amazon Elastic Block Storage)
 	*  ability to build persistent python environments
-* SageMaker notebook instance environment
+* #AWS/SageMaker/notebook instance environment
 	* Jupyter Kernel
 	* Python packages
 	* installation of external libraries and kernels possible
@@ -60,13 +60,14 @@ https://docs.aws.amazon.com/sagemaker/latest/dg/howitworks-create-ws.html
 ## Customize notebook with [_Lifecycle Configuration_][1] script
 The following are best practices for using lifecycle configurations:
 * Lifecycle configurations run as the `root` user. If your script makes any changes within the `/home/ec2-user/SageMaker` directory, (for example, installing a package with `pip`), use the command `sudo -u ec2-user` to run as the `ec2-user` user. This is the same user that Amazon SageMaker runs as.
-* SageMaker notebook instances use `conda` environments to implement different kernels for Jupyter notebooks. If you want to install packages that are available to one or more notebook kernels, enclose the commands to install the packages with `conda` environment commands that activate the conda environment that contains the kernel where you want to install the packages.
-* AWS SageMaker notebook instances have direct internet access by default
+* SageMaker notebook instances use `conda` environments to implement different kernels for Jupyter notebooks. If you want to install packages that are available to one or more #Jupyter/notebook kernels, enclose the commands to install the packages with `conda` environment commands that activate the conda environment that contains the kernel where you want to install the packages.
+* #AWS/SageMaker/notebook instances have direct internet access by default
 	* ability to download packages, notebooks and datasets
 	* access other SageMaker components through the **public** internet
 
 ### Create a _Lifecycle Configuration_
 **[Lifecycle configuration best practices][2] is a good starting point!**
+#AWS/SageMaker/notebook/lifecycle_configuration
 #### Option 1
 Create a _Lifecycle Configuration_ during the creation of a new SageMaker notebook instance.
 The following blog entry will guide through the steps: [# Customize your Amazon SageMaker notebook instances with lifecycle configurations and the option to disable internet access](https://aws.amazon.com/blogs/machine-learning/customize-your-amazon-sagemaker-notebook-instances-with-lifecycle-configurations-and-the-option-to-disable-internet-access/)
