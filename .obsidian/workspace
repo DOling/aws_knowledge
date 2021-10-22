@@ -1,0 +1,108 @@
+{
+  "main": {
+    "id": "a725785f43a86fdb",
+    "type": "split",
+    "children": [
+      {
+        "id": "b136c632f339e7de",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Infrastructure as code.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "30191e4721081eae",
+    "type": "split",
+    "children": [
+      {
+        "id": "c58acff7329c1e4e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7993739355f3cd22",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "e55701638914c916",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#build",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "209dbbd747f8b80f",
+    "type": "split",
+    "children": [
+      {
+        "id": "702d48f890fc6105",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "12dddff0b57232f4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Infrastructure as code.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dad08363ce3abd68",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b136c632f339e7de",
+  "lastOpenFiles": [
+    "Infrastructure as code.md",
+    "Untitled.md",
+    "SageMaker.md"
+  ]
+}
